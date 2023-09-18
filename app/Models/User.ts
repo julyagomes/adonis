@@ -5,12 +5,15 @@ import { column, beforeSave, BaseModel } from '@ioc:Adonis/Lucid/Orm'
 export default class User extends BaseModel {
   @column({ isPrimary: true })
   public id: number
-  
+
   @column()
   public name: string
-  
+
   @column()
   public email: string
+
+  @column()
+  public token: string
 
   @column({ serializeAs: null })
   public password: string
