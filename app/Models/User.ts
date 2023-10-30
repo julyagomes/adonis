@@ -3,6 +3,9 @@ import Hash from '@ioc:Adonis/Core/Hash'
 import { column, beforeSave, BaseModel } from '@ioc:Adonis/Lucid/Orm'
 
 export default class User extends BaseModel {
+  static findOrFail(id: any) {
+      throw new Error('Method not implemented.')
+  }
   @column({ isPrimary: true })
   public id: number
 
