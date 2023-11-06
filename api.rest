@@ -17,4 +17,14 @@ Content-Type: application/json
     "password": "1234"
 }
 
+### Mensagem Push
+POST https://adonis-julya.onrender.com/push HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer Mzg.kESslQGtjFobY6H40A3Uokw8qCMMI9caKWCxcfxk7Z9eZUjOt0yA1ttpz3bG
+{
+    "id": 1,
+    "title": "Oi",
+    "body": "Tudo bem?"
+}
+
 
